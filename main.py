@@ -1,6 +1,5 @@
 import requests
 import os
-#import feedparser
 from time import sleep
 from datetime import datetime
 
@@ -70,7 +69,7 @@ def main():
             logWrite = datetime.now().strftime('%Y-%m-%d %H:%M:%S')+ " Rimosso " + titoloDaRimuovere + " - ID: " + videoID + "\n"
             logFile.write(logWrite)
             print('Rimosso ' + videoID)
-    logfile.close()
+    logFile.close()
 
 if __name__ == "__main__":
     while(True):
